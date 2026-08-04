@@ -30,8 +30,9 @@ connessione. Il pulsante "Come arrivare" apre le indicazioni su Google Maps.
 ## Foto
 
 Le foto reali stanno in `public/img/` (ottimizzate a max 1400–2000px, JPEG progressivo).
-La cartella sorgente `foto da mettere/` non viene usata dal build. Le foto ricavate da
-video avevano i comandi del player in basso: sono state ritagliate.
+Gli scatti originali sono archiviati in `foto-originali/`, che resta in locale ed è
+esclusa dal versionamento (`.gitignore`) — non fare affidamento solo su quella copia.
+Le foto ricavate da video avevano i comandi del player in basso: sono state ritagliate.
 
 - `hero.jpg` → sezione hero
 - `squadra.jpg` → sezione "Chi siamo"
