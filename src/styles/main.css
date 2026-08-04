@@ -216,10 +216,13 @@ a:hover {
 
 .brand__mark {
   display: block;
-  width: 14px;
-  height: 14px;
-  background: var(--accent);
   flex: none;
+  color: var(--accent);
+  transition: color 0.15s ease;
+}
+
+.brand:hover .brand__mark {
+  color: var(--ink);
 }
 
 .brand__name {

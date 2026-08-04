@@ -1,6 +1,7 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { nav, officina } from '../data/content'
+import LogoMark from './LogoMark.vue'
 
 const attiva = ref('')
 let observer = null
@@ -28,7 +29,7 @@ onBeforeUnmount(() => observer?.disconnect())
 <template>
   <header class="site-header">
     <a href="#top" class="brand">
-      <span class="brand__mark" aria-hidden="true"></span>
+      <LogoMark class="brand__mark" :size="24" />
       <span class="brand__name">{{ officina.nome }}</span>
     </a>
 
